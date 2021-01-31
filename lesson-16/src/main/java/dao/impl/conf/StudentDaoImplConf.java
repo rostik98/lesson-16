@@ -1,4 +1,4 @@
-package ua.lviv.lgs;
+package dao.impl.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,7 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import dao.impl.StudentDaoImpl;
 
 @Configuration
-public class CustomConfiguration {
+public class StudentDaoImplConf {
+
 	@Bean(name = "student")
 	public StudentDaoImpl getStudentDaoImplConf() {
 
@@ -15,8 +16,4 @@ public class CustomConfiguration {
 		return daoImpl;
 	}
 
-	@Bean(name = "consoleEventLogger")
-	public ConsoleEventLogger getConsoleEventLogger() {
-		return new ConsoleEventLogger();
-	}
 }

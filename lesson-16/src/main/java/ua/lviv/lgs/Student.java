@@ -46,6 +46,22 @@ public class Student {
 	}
 
 	/**
+	 * @param id
+	 * @param name
+	 * @param age
+	 */
+	public Student(int id, String name, int age) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
 	 * @param age the age to set
 	 */
 	public void setAge(int age) {
